@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="navbar-lewagon">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= asset_path 'cinema.jpg' %>)">
+    </div>
+      <h1> List details </h1>
+      <ul>
+        <li class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> <%= link_to @list.name, new_list_bookmark_path(@list)%></li>
+        <% @list.bookmarks.each do |bookmark| %>
+          <p><%= bookmark.comment %></p>
+        <% end %>
+        
+         <button class="btn-gradient space-around btn-gradient-smaller"><%= link_to "Listes", lists_path %></button>
+    </div>
+  </div>
+</div>

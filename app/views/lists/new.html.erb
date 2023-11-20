@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="navbar-lewagon">
+   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= asset_path 'insert.jpg' %>)">
+    </div>
+      <h1> Insert a new list </h1>
+        <ul>
+          <%= simple_form_for @list do |f| %>
+          <p> <li class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover li-smaller">
+          <%= f.input :name %> </li> </p> </p>
+          <%= f.submit class: "btn-gradient space-around btn-gradient-medium-size mt-4" %>
+          <button class="btn-gradient space-around btn-gradient-medium-size mt-4"> <%= link_to "Listes", lists_path(@root) %> </button>
+          <% end %>
+        </ul>
+  </div>
+</div>

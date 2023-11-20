@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="navbar-lewagon">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= asset_path 'chose.jpg' %>)">
+    </div>
+      <h1>Add a comment on a movie </h1>
+      <div class="p-3">
+          <%= simple_form_for [@list, @bookmark] do |f| %>
+            <%= f.association :movie %>
+            <%= f.input :comment %>
+            <%= f.button :submit, class: "btn btn-gradient" %>
+          <% end %>
+        </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.btn-gradient {
+  color: white;
+  text-shadow: 1px 1px #0f1a20;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#76E5FC, #2498af);
+  /* transition: background 0.3s ease; */
+  border: 1px solid #0F60C4;
+  font-size: 1em;
+  margin-top: 30px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(#0f1a20, #454a4f);
+    color: $pink;
+    text-shadow: -1px 1px #FEF9FF;
+    transform: rotate(360deg)
+  }
+}
+
+.space-around{
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+.btn-gradient-smaller{
+  width: 120px;
+  padding: 0px 10px;
+  padding-left: 0px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.btn-gradient-smaller a{
+  text-align: center;
+}
+
+.btn-gradient-medium-size{
+  width: 140px;
+  margin-left: 30px;
+}
+
+.p-style{
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

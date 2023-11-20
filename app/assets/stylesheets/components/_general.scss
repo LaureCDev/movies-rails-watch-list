@@ -1,0 +1,17 @@
+@import "../config/colors";
+@import "../config/fonts";
+
+body{
+  background-color: $ghost-white;
+  font-family: $body-font;
+}
+
+.list-group-item-success{
+  background-color: $light-blue;
+  border-radius: 55px/55px;
+  box-shadow: 5px 5px 7px 4px $light-brown;
+
+&:hover{
+    background-color: rgba(34, 130, 149, 0.8);
+  }
+}

@@ -1,0 +1,22 @@
+@import "../config/colors";
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $ghost-white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(15,26,32,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(15,26,32,0.2);
+  margin-bottom: 30px;
+  background-color: $ghost-white;
+
+  &:img{
+    object-fit: cover;
+  }
+}
