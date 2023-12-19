@@ -3,9 +3,10 @@
 
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= asset_path 'movies-list.jpg' %>)">
     </div>
+  
       <h1> Movies list </h1>
       <p class="p-style"><%= link_to "Add a list", new_list_path %></p>
-        <ul>
+        <ul> List:
         <% @lists.each do |list| %>
           <li class="list-group-item list-group-item-success p-2"> <i class="fa-solid fa-video fa-xs i-styling">
           </i><%= link_to list.name, list_path(list) %></li>
